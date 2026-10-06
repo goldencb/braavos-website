@@ -1,0 +1,77 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Braavos Capital Partners</title>
+<meta name="description" content="Braavos Capital Partners is a Chicago-based proprietary trading firm applying systematic, quantitative methods across global markets.">
+<link rel="icon" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#070d18;--bg2:#0b1424;--line:#1c2840;--txt:#e6ebf2;--mut:#8b97ab;--dim:#5b6780;--gold:#c9a75a}
+html{scroll-behavior:smooth}
+html,body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 40px}
+nav{display:flex;align-items:center;justify-content:space-between;height:84px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:14px;font-weight:500;letter-spacing:.14em;font-size:13px;text-transform:uppercase}
+.dia{width:26px;height:26px;border:1px solid var(--gold);transform:rotate(45deg);display:grid;place-items:center}
+.dia span{transform:rotate(-45deg);color:var(--gold);font-weight:600;font-size:12px;letter-spacing:0}
+.navlinks{display:flex;gap:34px;font-size:13px;color:var(--mut);letter-spacing:.04em}
+.navlinks a:hover{color:var(--txt)}
+.hero{position:relative;height:540px;display:flex;align-items:center;overflow:hidden;border-bottom:1px solid var(--line)}
+canvas{position:absolute;inset:0;width:100%;height:100%}
+.hero .wrap{position:relative;width:100%}
+.eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:26px}
+h1{font-family:'Playfair Display',Georgia,serif;font-weight:500;font-size:58px;line-height:1.08;max-width:760px}
+.lede{margin-top:26px;font-size:18px;line-height:1.65;color:var(--mut);max-width:600px;font-weight:300}
+section{padding:96px 0;border-bottom:1px solid var(--line)}
+.label{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+h2{font-family:'Playfair Display',Georgia,serif;font-weight:500;font-size:36px;line-height:1.2;max-width:640px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.two p{font-size:16px;line-height:1.8;color:var(--mut);font-weight:300}
+.two p+p{margin-top:18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:48px}
+.card{background:var(--bg);padding:38px 32px}
+.num{font-size:12px;color:var(--gold);letter-spacing:.2em;margin-bottom:22px}
+.card h3{font-weight:500;font-size:18px;margin-bottom:12px}
+.card p{font-size:14.5px;line-height:1.75;color:var(--mut);font-weight:300}
+.contact{background:var(--bg2)}
+.contact .two{align-items:center}
+.mail{display:inline-block;margin-top:8px;font-size:22px;border-bottom:1px solid var(--gold);padding-bottom:6px}
+.mail:hover{color:var(--gold)}
+.addr{font-size:14px;color:var(--mut);line-height:1.9}
+footer{padding:34px 0 40px;font-size:12px;color:var(--dim);line-height:1.8}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+@media(max-width:699px){.wrap{padding:0 22px}h1{font-size:38px}.two,.grid{grid-template-columns:1fr}.two{gap:28px}.navlinks{display:none}section{padding:64px 0}.hero{height:480px}}
+</style></head><body>
+<nav class="wrap"><div class="brand"><div class="dia"><span>B</span></div>Braavos Capital Partners</div>
+<div class="navlinks"><a href="#firm">The Firm</a><a href="#approach">Approach</a><a href="#contact">Contact</a></div></nav>
+<div class="hero"><canvas id="c"></canvas><div class="wrap">
+<div class="eyebrow">Chicago &nbsp;·&nbsp; Proprietary Trading</div>
+<h1>Systematic trading, built on research and engineering.</h1>
+<p class="lede">Braavos Capital Partners is a proprietary trading firm applying quantitative methods and technology across global markets.</p>
+</div></div>
+<section id="firm"><div class="wrap two">
+<div><div class="label">The Firm</div><h2>A disciplined, data-driven approach to markets.</h2></div>
+<div><p>Founded in Chicago, Braavos Capital Partners trades its own capital using fully systematic strategies. Our work sits at the intersection of statistical research, software engineering and risk management.</p>
+<p>We are a small team that values rigor, simplicity and long-term thinking, and we build the research and trading infrastructure we rely on ourselves.</p></div>
+</div></section>
+<section id="approach"><div class="wrap">
+<div class="label">Approach</div><h2>How we work</h2>
+<div class="grid">
+<div class="card"><div class="num">01</div><h3>Research</h3><p>Hypotheses are tested rigorously against large historical datasets, with an emphasis on robustness over fit.</p></div>
+<div class="card"><div class="num">02</div><h3>Technology</h3><p>In-house infrastructure for data, model development and low-latency execution, designed for reliability.</p></div>
+<div class="card"><div class="num">03</div><h3>Risk</h3><p>Position limits, real-time monitoring and automated controls are built into every strategy from the start.</p></div>
+</div></div></section>
+<section id="contact" class="contact"><div class="wrap two">
+<div><div class="label">Contact</div><h2>Get in touch</h2></div>
+<div><a class="mail" href="mailto:contact@braavostrading.net">contact@braavostrading.net</a>
+<div class="addr" style="margin-top:22px">Braavos Capital Partners LLC<br>Chicago, Illinois</div></div>
+</div></section>
+<footer><div class="wrap"><div>© 2026 Braavos Capital Partners LLC. All rights reserved.</div>
+<div style="max-width:560px">Braavos Capital Partners is a proprietary trading firm. Nothing on this site is an offer to sell or a solicitation of an offer to buy any security or investment product.</div></div></footer>
+<script>
+const c=document.getElementById('c'),x=c.getContext('2d');let W,H,L=[];
+function r(){W=c.width=c.offsetWidth*devicePixelRatio;H=c.height=c.offsetHeight*devicePixelRatio;L=[];for(let i=0;i<16;i++){let y=H*(.2+.6*Math.random()),p=[];for(let k=0;k<=90;k++)p.push(y);L.push({p,v:0,a:.035+Math.random()*.09,g:i%5==0})}for(let i=0;i<90;i++)st()}
+function st(){for(const l of L){l.p.shift();let a=l.p[l.p.length-1];l.v+=(Math.random()-.5)*.8-(a-H*.55)*.0003;l.v*=.92;l.p.push(a+l.v*devicePixelRatio*2.4)}}
+function d(){st();x.clearRect(0,0,W,H);const gr=x.createLinearGradient(0,0,W,0);gr.addColorStop(0,'rgba(7,13,24,1)');gr.addColorStop(.45,'rgba(7,13,24,0)');for(const l of L){x.beginPath();l.p.forEach((y,k)=>{let X=k/90*W;k?x.lineTo(X,y):x.moveTo(X,y)});x.strokeStyle=l.g?`rgba(201,167,90,${l.a+.08})`:`rgba(120,150,200,${l.a})`;x.lineWidth=devicePixelRatio;x.stroke()}x.fillStyle=gr;x.fillRect(0,0,W,H);setTimeout(()=>requestAnimationFrame(d),70)}
+addEventListener('resize',r);r();d();
+</script></body></html>
